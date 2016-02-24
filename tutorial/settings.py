@@ -77,13 +77,16 @@ USE_L10N = True
 
 USE_TZ = True
 
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/static/'
+STATIC_ROOT= os.path.join(PROJECT_ROOT,'static/')
+STATICFILES_DIRS = ()
 
 # SwampDragon settings
 SWAMP_DRAGON_CONNECTION = ('swampdragon.connections.sockjs_connection.DjangoSubscriberConnection', '/data')
