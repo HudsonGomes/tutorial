@@ -50,3 +50,4 @@ html2text==2015.6.21
 nltk==3.1
 django-model-utils==2.3.1
 swampdragon==0.4.2.2
+gunicorn==19.0.0
